@@ -1,8 +1,34 @@
 <!doctype html>
-<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#6c5ce7"><link rel="manifest" href="manifest.json">
-<title>Je m'ennuie !</title><link rel="stylesheet" href="style.css"></head>
-<body><main><h1>Je m'ennuie !</h1><p class="sub">Trouve une idée en quelques secondes.</p>
-<div class="actions"><button id="random">🎲 Surprends-moi</button><button id="favBtn">❤️ Mes favoris</button></div>
-<input id="search" placeholder="Rechercher une activité…"><div id="idea" class="hero"></div>
-<h2>Idées d'activités</h2><div id="list"></div></main><script src="app.js"></script></body></html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#6c5ce7">
+<title>Je m'ennuie</title>
+<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+<header><div class="logo">✨</div><div><h1>Je m'ennuie</h1><p>300 idées pour ne plus tourner en rond.</p></div></header>
+<section class="hero">
+<h2>On fait quoi maintenant ?</h2>
+<p>Choisis un filtre ou laisse l'application te surprendre.</p>
+<div class="actions"><button id="surprise" class="primary">🎲 Surprends-moi</button><button id="roulette">🎡 Roulette</button></div>
+<div id="idea" class="idea">Appuie sur « Surprends-moi » 👆</div>
+<button id="favBtn" class="fav">♡ Ajouter aux favoris</button>
+</section>
+<section>
+<h3>Filtrer les idées</h3>
+<div id="filters" class="chips"></div>
+<input id="search" type="search" placeholder="🔎 Rechercher une idée…">
+</section>
+<section class="local">
+<h3>📍 Propositions dans ma région</h3>
+<p>Autorise la localisation pour obtenir des idées de sorties autour de toi.</p>
+<button id="localBtn" class="primary">Trouver des idées près de moi</button>
+<div id="localResult"></div>
+</section>
+<section><h3>❤️ Mes favoris</h3><div id="favorites" class="list muted">Aucun favori pour le moment.</div></section>
+<section><h3>💡 Idées</h3><div id="ideas" class="list"></div></section>
+</main>
+<script src="app.js"></script>
+</body></html>

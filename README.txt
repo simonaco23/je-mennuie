@@ -1,7 +1,11 @@
-JE M'ENNUIE ! — PWA
-Contenu : 300 idées, recherche, favoris, bouton Surprends-moi et fonctionnement hors connexion après le premier chargement.
+JE M'ENNUIE — PWA
+Version corrigée avec :
+- 300 idées
+- filtres et recherche
+- roulette et bouton Surprends-moi
+- favoris enregistrés sur l'appareil
+- section « Propositions dans ma région » avec géolocalisation
+- fonctionnement hors connexion via service worker
+- aucune publicité
 
-Pour tester sur ordinateur :
-1. Décompressez le ZIP.
-2. Servez le dossier avec un petit serveur web (une PWA ne doit pas être ouverte simplement en file://).
-3. Publiez le dossier sur un hébergeur HTTPS pour l'installer sur téléphone.
+Pour GitHub Pages, placer index.html, style.css, app.js, manifest.json et sw.js à la racine du dépôt.

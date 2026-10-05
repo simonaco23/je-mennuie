@@ -1,9 +1,9 @@
 {
-  "name": "Je m'ennuie !",
+  "name": "Je m'ennuie",
   "short_name": "Je m'ennuie",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#f5f3ff",
+  "background_color": "#16152b",
   "theme_color": "#6c5ce7",
-  "lang": "fr"
+  "description": "300 idées pour trouver quoi faire quand on s'ennuie."
 }
