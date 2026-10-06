@@ -1,34 +1,9 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#6c5ce7">
-<title>Je m'ennuie</title>
-<link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css">
-</head>
-<body>
-<main class="app">
-<header><div class="logo">✨</div><div><h1>Je m'ennuie</h1><p>300 idées pour ne plus tourner en rond.</p></div></header>
-<section class="hero">
-<h2>On fait quoi maintenant ?</h2>
-<p>Choisis un filtre ou laisse l'application te surprendre.</p>
-<div class="actions"><button id="surprise" class="primary">🎲 Surprends-moi</button><button id="roulette">🎡 Roulette</button></div>
-<div id="idea" class="idea">Appuie sur « Surprends-moi » 👆</div>
-<button id="favBtn" class="fav">♡ Ajouter aux favoris</button>
-</section>
-<section>
-<h3>Filtrer les idées</h3>
-<div id="filters" class="chips"></div>
-<input id="search" type="search" placeholder="🔎 Rechercher une idée…">
-</section>
-<section class="local">
-<h3>📍 Propositions dans ma région</h3>
-<p>Autorise la localisation pour obtenir des idées de sorties autour de toi.</p>
-<button id="localBtn" class="primary">Trouver des idées près de moi</button>
-<div id="localResult"></div>
-</section>
-<section><h3>❤️ Mes favoris</h3><div id="favorites" class="list muted">Aucun favori pour le moment.</div></section>
-<section><h3>💡 Idées</h3><div id="ideas" class="list"></div></section>
-</main>
-<script src="app.js"></script>
-</body></html>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7faff"><meta name="apple-mobile-web-app-capable" content="yes"><title>Je m’ennuie !</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"></head><body><main id="app">
+<header class="top"><div class="brand">Je m’ennuie<span>⌁</span></div><button class="icon-btn" aria-label="Réglages">⚙️</button></header>
+<section class="search">🔎 <input id="search" placeholder="Rechercher une activité…"></section>
+<section class="hero"><div><small>DES IDÉES POUR</small><h1>ne plus jamais<br>s’ennuyer !</h1><p>Choisis une idée ou laisse la roulette décider.</p></div><button id="surprise">🎲</button></section>
+<section class="roulette-card"><div class="section-title"><div><h2>🎡 Roulette</h2><p>Fais défiler les idées et laisse le hasard choisir.</p></div><button id="spin" class="primary">Tourner</button></div><div class="roulette-window"><div class="pointer"></div><div id="track" class="track"></div></div><div id="result" class="result hidden"></div></section>
+<section><div class="section-title"><h2>Choisir une catégorie</h2><button class="link" id="all">Voir tout</button></div><div class="grid" id="categories"></div></section>
+<section><div class="section-title"><h2>✨ Idées du moment</h2></div><div class="ideas" id="ideas"></div></section>
+</main><nav class="bottom"><button class="active">⌂<span>Accueil</span></button><button>♡<span>Favoris</span></button><button>◷<span>Historique</span></button><button>•••<span>Plus</span></button></nav>
+<script src="app.js"></script></body></html>
