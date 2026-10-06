@@ -1,9 +1,19 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7faff"><meta name="apple-mobile-web-app-capable" content="yes"><title>Je m’ennuie !</title><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"></head><body><main id="app">
-<header class="top"><div class="brand">Je m’ennuie<span>⌁</span></div><button class="icon-btn" aria-label="Réglages">⚙️</button></header>
-<section class="search">🔎 <input id="search" placeholder="Rechercher une activité…"></section>
-<section class="hero"><div><small>DES IDÉES POUR</small><h1>ne plus jamais<br>s’ennuyer !</h1><p>Choisis une idée ou laisse la roulette décider.</p></div><button id="surprise">🎲</button></section>
-<section class="roulette-card"><div class="section-title"><div><h2>🎡 Roulette</h2><p>Fais défiler les idées et laisse le hasard choisir.</p></div><button id="spin" class="primary">Tourner</button></div><div class="roulette-window"><div class="pointer"></div><div id="track" class="track"></div></div><div id="result" class="result hidden"></div></section>
-<section><div class="section-title"><h2>Choisir une catégorie</h2><button class="link" id="all">Voir tout</button></div><div class="grid" id="categories"></div></section>
-<section><div class="section-title"><h2>✨ Idées du moment</h2></div><div class="ideas" id="ideas"></div></section>
-</main><nav class="bottom"><button class="active">⌂<span>Accueil</span></button><button>♡<span>Favoris</span></button><button>◷<span>Historique</span></button><button>•••<span>Plus</span></button></nav>
+<!doctype html>
+<html lang="fr"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827"><link rel="manifest" href="manifest.json"><link rel="icon" href="assets/icon.svg">
+<title>Je m'ennuie !</title><link rel="stylesheet" href="style.css">
+</head><body>
+<div id="app">
+<header><div><div class="brand">Je m’ennuie !</div><div class="subtitle">Une idée quand tu ne sais pas quoi faire ✨</div></div><button class="iconbtn" id="randomTop">🎲</button></header>
+<main id="home">
+<section class="hero"><div><span class="pill">✨ Nouvelle idée</span><h1>Tu t’ennuies ?<br><b>On a une idée.</b></h1><p>Lance la roulette ou choisis directement une activité.</p><button class="primary" id="spinHero">🎰 Faire tourner la roulette</button></div></section>
+<h2>Choisir une activité</h2>
+<div class="filters"><button class="filter active" data-filter="Toutes">Toutes</button><button class="filter" data-filter="Cuisine">🍳 Cuisine</button><button class="filter" data-filter="Extérieur">🌳 Extérieur</button><button class="filter" data-filter="Sport">🏃 Sport</button><button class="filter" data-filter="À la maison">🏠 Maison</button><button class="filter" data-filter="Créativité">🎨 Créatif</button></div>
+<div id="cards" class="grid"></div>
+</main>
+<main id="roulette" class="screen hidden"><button class="back">← Retour</button><div class="rouletteHead"><h2>La roulette</h2><p>Ça défile… et ça s’arrête sur ton activité 🎯</p></div><div class="rouletteWindow"><div id="rouletteTrack"></div></div><button class="primary big" id="spin">🎰 TOURNER</button><div id="rouletteHint">Prêt ?</div></main>
+<main id="detail" class="screen hidden"><button class="back">← Retour</button><div id="detailContent"></div></main>
+<nav><button data-nav="home" class="navactive">⌂<span>Accueil</span></button><button data-nav="roulette">🎰<span>Roulette</span></button><button data-nav="favorites">♥<span>Favoris</span></button></nav>
+</div>
 <script src="app.js"></script></body></html>
